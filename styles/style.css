@@ -57,7 +57,7 @@ a {
   align-items: center;
   justify-content: space-between;
   background-color: var(--color-plan-bg);
-  padding: 1rem;
+  padding: 1.5rem;
   margin: 1rem 0;
   border-radius: 0.5rem;
 }
