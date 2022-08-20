@@ -14,10 +14,14 @@ body {
   margin: 0;
   padding: 1.5rem;
   background-color: var(--color-bg);
+  background-image: url('/images/pattern-background-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 p {
   font-size: 16px;
+  line-height: 1.5rem;
 }
 
 a {
@@ -26,9 +30,11 @@ a {
 }
 
 .order-summary {
+  max-width: 25rem;
   background-color: #fff;
   border-radius: 1.5rem;
   color: var(--color-text);
+  box-shadow: 0 2rem 4rem -2rem hsla(245, 75%, 52%, 0.5);
 }
 
 .summary-hero {
@@ -52,7 +58,7 @@ a {
   justify-content: space-between;
   background-color: var(--color-plan-bg);
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   border-radius: 0.5rem;
 }
 
@@ -104,4 +110,22 @@ a:hover {
 
 .btn-text:hover {
   color: var(--color-text-dark);
+}
+
+.center {
+  margin-top: calc(50vh - 1.5rem - 87%);
+}
+  
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url('/images/pattern-background-desktop.svg');
+  }
+
+  .center {
+    margin-top: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
